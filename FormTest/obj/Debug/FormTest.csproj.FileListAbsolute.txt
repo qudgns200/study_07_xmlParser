@@ -1,0 +1,18 @@
+c:\users\paul\documents\visual studio 2015\Projects\FormTest\FormTest\bin\Debug\FormTest.exe.config
+c:\users\paul\documents\visual studio 2015\Projects\FormTest\FormTest\obj\Debug\FormTest.csprojResolveAssemblyReference.cache
+c:\users\paul\documents\visual studio 2015\Projects\FormTest\FormTest\obj\Debug\FormTest.Properties.Resources.resources
+c:\users\paul\documents\visual studio 2015\Projects\FormTest\FormTest\obj\Debug\FormTest.csproj.GenerateResource.Cache
+c:\users\paul\documents\visual studio 2015\Projects\FormTest\FormTest\bin\Debug\FormTest.exe
+c:\users\paul\documents\visual studio 2015\Projects\FormTest\FormTest\bin\Debug\FormTest.pdb
+c:\users\paul\documents\visual studio 2015\Projects\FormTest\FormTest\obj\Debug\FormTest.exe
+c:\users\paul\documents\visual studio 2015\Projects\FormTest\FormTest\obj\Debug\FormTest.pdb
+C:\Users\Paul\Documents\Visual Studio 2015\Projects\FormTest\FormTest\obj\Debug\FormTest.Form1.resources
+D:\02_Dev\FormTest\FormTest\bin\Debug\FormTest.exe.config
+D:\02_Dev\FormTest\FormTest\obj\Debug\FormTest.exe
+D:\02_Dev\FormTest\FormTest\obj\Debug\FormTest.pdb
+D:\02_Dev\FormTest\FormTest\bin\Debug\FormTest.exe
+D:\02_Dev\FormTest\FormTest\bin\Debug\FormTest.pdb
+D:\02_Dev\FormTest\FormTest\obj\Debug\FormTest.csprojResolveAssemblyReference.cache
+D:\02_Dev\FormTest\FormTest\obj\Debug\FormTest.Form1.resources
+D:\02_Dev\FormTest\FormTest\obj\Debug\FormTest.Properties.Resources.resources
+D:\02_Dev\FormTest\FormTest\obj\Debug\FormTest.csproj.GenerateResource.Cache
