@@ -31,23 +31,28 @@ namespace FormTest
 
         private void LoadXml(string path)
         {
+            // Load XML using PATH
             XmlDocument xml = new XmlDocument();
             xml.Load(path);
 
+            // Devide Node as String
             XmlNodeList xlist = xml.SelectNodes("//MESSAGE");
 
+            // Load as Attribute from Node
             foreach(XmlNode node in xlist)
             {
                 XmlElement xelmnt = (XmlElement)node;
                 string stream = "S" + xelmnt.GetAttribute("STREAM");
                 string function = "F" + xelmnt.GetAttribute("FUNCTION");
                 string desc = xelmnt.GetAttribute("DESC");
-                string content = node.OuterXml.ToString();
+                //string content = node.OuterXml;
+                string content = FormatXml(node);
 
                 DataAddToList(stream, function, desc, content);
             }
         }
 
+        // Added Values to ListView
         private void DataAddToList(string s, string f, string desc, string content)
         {
             listView1.BeginUpdate();
@@ -60,6 +65,7 @@ namespace FormTest
             listView1.EndUpdate();
         }
 
+        // Load xml event
         private void openOToolStripMenuItem_Click(object sender, EventArgs e)
         {
             String file_path = null;
@@ -82,6 +88,25 @@ namespace FormTest
         {
             ListView lv = (ListView)sender;
             content.Text = lv.FocusedItem.SubItems[2].Text;
+        }
+
+        // To parse for XML format
+        protected string FormatXml(XmlNode xmlNode)
+        {
+            StringBuilder bob = new StringBuilder();
+
+            // We will use stringWriter to push the formated xml into our StringBuilder bob.
+            using (System.IO.StringWriter stringWriter = new System.IO.StringWriter(bob))
+            {
+                // We will use the Formatting of our xmlTextWriter to provide our indentation.
+                using (XmlTextWriter xmlTextWriter = new XmlTextWriter(stringWriter))
+                {
+                    xmlTextWriter.Formatting = Formatting.Indented;
+                    xmlNode.WriteTo(xmlTextWriter);
+                }
+            }
+
+            return bob.ToString();
         }
     }
 }
